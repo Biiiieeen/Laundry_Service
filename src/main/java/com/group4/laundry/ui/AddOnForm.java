@@ -1,0 +1,50 @@
+package com.group4.laundry.ui;
+
+/** Member 3: add_ons. Commit this file together with its .form file. */
+public class AddOnForm extends javax.swing.JFrame {
+    public AddOnForm() {
+        initComponents();
+        setLocationRelativeTo(null);
+    }
+
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+        titleLabel = new javax.swing.JLabel();
+        contentScroll = new javax.swing.JScrollPane();
+        placeholderText = new javax.swing.JTextArea();
+        closeButton = new javax.swing.JButton();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Add-ons | Group 4");
+        titleLabel.setText("Add-ons - Member 3");
+        getContentPane().add(titleLabel, java.awt.BorderLayout.NORTH);
+
+        placeholderText.setEditable(false);
+        placeholderText.setColumns(50);
+        placeholderText.setRows(12);
+        placeholderText.setText("Module placeholder\n\nManage add-on names, units, prices and availability.\n\nTables: add_ons\n\nNo records are loaded or saved yet.\nAdd form fields using the NetBeans Design tab.");
+        contentScroll.setViewportView(placeholderText);
+        getContentPane().add(contentScroll, java.awt.BorderLayout.CENTER);
+
+        closeButton.setText("Close");
+        closeButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                closeButtonActionPerformed(evt);
+            }
+        });
+        getContentPane().add(closeButton, java.awt.BorderLayout.SOUTH);
+        pack();
+    }// </editor-fold>//GEN-END:initComponents
+
+    private void closeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_closeButtonActionPerformed
+        dispose();
+    }//GEN-LAST:event_closeButtonActionPerformed
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton closeButton;
+    private javax.swing.JScrollPane contentScroll;
+    private javax.swing.JTextArea placeholderText;
+    private javax.swing.JLabel titleLabel;
+    // End of variables declaration//GEN-END:variables
+}
